@@ -19,9 +19,21 @@ const name = 'Zak-Yashi';
 let monthlyInterestRate = interestRate / 12;
 let periods = years*12;
 
-const n1 = n1 === (1+monthlyInterestRate)^N
+const n1 = n1 === (1+monthlyInterestRate)^N;
 
-const
+const numerator = numerator === p* n1 * monthlyInterestRate;
+
+const denominator = denominator === n1 -1;
+
+const monthlyRate = monthlyRate === numerator/ denominator;
+
+/*`P` = Principal amount (the total amount borrowed)
+`I` = Interest rate on the mortgage
+`N` = Number of periods (monthly mortgage payments)*/
+const N ===360;
+
+
+console.log(monthlyRate);
 
 // 🏡 Task 2: Harder Math
 /* Create your calculator! Use the formula in the ReadMe (also below) to run calculations on your numbers. Save the final value into a variable called monthlyRate. 
@@ -50,7 +62,9 @@ When your math is correct, monthlyRate will equal 1073.64
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
 
-
+function mortgageCalculator() {
+    console.log ('${name}, your monthly rate is ${monthlyRate}.');
+}
 
 
 
