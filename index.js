@@ -9,6 +9,9 @@ let principal = 200000;
 let interestRate = 0.05;
 let years = 30;
 const name = 'Zak-Yashi';
+let p = 200000;
+let i = 0.05;
+let n = 360;
 
 // 🏡 Task 1.5: Simple Math
 /* To create a monthly mortgage rate calculator, we need to know the number of years in months and the monthly interest rate. 
@@ -19,18 +22,17 @@ const name = 'Zak-Yashi';
 let monthlyInterestRate = interestRate / 12;
 let periods = years*12;
 
-const n1 = n1 === (1+monthlyInterestRate)^N;
+const n1 = (1+monthlyInterestRate) ** periods;
 
-const numerator = numerator === p* n1 * monthlyInterestRate;
+const numerator = principal * n1 * monthlyInterestrate; 
+const denominator = n1 -1;
 
-const denominator = denominator === n1 -1;
-
-const monthlyRate = monthlyRate === numerator/ denominator;
+const monthlyRate = numerator/ denominator;
 
 /*`P` = Principal amount (the total amount borrowed)
 `I` = Interest rate on the mortgage
 `N` = Number of periods (monthly mortgage payments)*/
-const N ===360;
+
 
 
 console.log(monthlyRate);
@@ -64,6 +66,7 @@ If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly 
 
 function mortgageCalculator() {
     console.log ('${name}, your monthly rate is ${monthlyRate}.');
+    
 }
 
 
